@@ -9,6 +9,9 @@
     src:  url("../src/assets/css/fonts/finger.ttf");
 }
 
+
+
+
 /*general*/
 *, header{
     margin: 0px;
@@ -29,7 +32,6 @@ body{
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    background: url('./assets/flat-wallpaper-009.jpg');
     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente 
     background-position: center center;*/
     position: fixed;
@@ -69,9 +71,7 @@ body{
     text-align: center!important;
     bottom: 0;
     cursor: default;
-    height: 6em;
     left: 0;
-    line-height: 8em;
     position: absolute;
     display: block;
     width: 100%;
@@ -123,7 +123,7 @@ nav ul li{
     border-radius:5%;
     margin: 7px;
     position: relative;
-    width: 7em;
+    width: 12em;
     background:black;
 }
 

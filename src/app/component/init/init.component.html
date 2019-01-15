@@ -1,1 +1,16 @@
-
+<div id="bg"></div>
+<header id="header">
+    <img src="src\assets\am.png" class="icon-logo">
+    <h1>RYUKAZARI</h1>
+    <p id="nom">Rogger Maita Asmat</p>
+    <nav>
+        <ul>
+            <li><a [routerLink]="['/sobre-mi']">Sobre mí </a> </li>
+            <li><a [routerLink]="['/proyectos']"> Proyectos </a> </li>
+            <li><a [routerLink]="['/crear-proyecto']"> Crear Proyecto</a>  </li>
+            <li><a [routerLink]="['/contacto']"> Contacto</a>  </li>
+        </ul>
+    </nav>
+</header>
+<footer id="footer"><span>©Ryukazari</span></footer>
+<router-outlet></router-outlet>

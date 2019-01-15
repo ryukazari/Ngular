@@ -1,0 +1,33 @@
+menu ul{
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    background:black;
+    text-align: center;
+}
+
+menu ul li{
+    display: inline-block;
+    line-height: 2.885em;
+    margin: 7px;
+    position: relative;
+    width: 7em;
+    background:black;
+    text-align: center;
+}
+
+menu ul li a span{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background:black;
+    text-align: center;
+    margin:0;
+}
+
+menu ul li a span:hover{
+    cursor: pointer;
+    background: steelblue;
+
+}
