@@ -19,21 +19,14 @@ export class ProjectService{
     }
 
     saveProject(project: Project): Observable<any>{
-        let params = JSON.stringify(project);
-        let headers = new HttpHeaders().set('Content-Type','application/json');
+		let params = JSON.stringify(project);
+		let headers = new HttpHeaders().set('Content-Type','application/json');
 
-        return this._http.post(this.url+'/save-project', params, {headers: headers});
-        
-       /*const body = new HttpParams()
-        .set('name', project.name)
-        .set('description', project.description)
-        .set('year',project.category)
-        .set('langs',project.langs)
-        .set('category',project.category)
-        .set('image',project.image);
-        const headers = new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded' });
+		return this._http.post(this.url+'save-project', params,{ headers: headers } );
+    }
 
-        return this._http.post(this.url+'/save-project', body.toString(), { headers, observe: 'response' })*/
-
+    getProjects(): Observable<any>{
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+        return this._http.get(this.url+'projects', {headers : headers});
     }
 }

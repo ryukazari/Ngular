@@ -1,2 +1,16 @@
 <app-menubar></app-menubar>
+<div class="container">
+    <h2>Proyectos</h2>
+    <ul>
+        <li *ngFor="let project of projects" class="project">
+            <div class="image">
+                <img src="{{url+'/get-image/'+project.image}}" *ngIf="project.image"/>
+            </div>
+            <h3>{{project.name}}</h3>
+            <h4>{{project.description}}</h4>
+        </li>
+        
+    </ul>
+</div>
+
 <app-footer></app-footer>

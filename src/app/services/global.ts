@@ -1,3 +1,4 @@
 export const Global = {
-    url:'http://localhost:3700/api/projects'
+    url:'http://localhost:3700/api/'
+    //url:'https://backend-portafolio-nodejs.herokuapp.com/api'
 };

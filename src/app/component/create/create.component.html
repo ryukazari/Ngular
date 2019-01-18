@@ -1,7 +1,12 @@
 <app-menubar></app-menubar>
 <div class="container">
     <h2>{{title}}</h2>
-
+    <div class="message succes" *ngIf="status == 'succes'"> 
+        El projecto se ha creado correctamente, <a href=""> Click aqui </a> 
+    </div>
+    <div class="message failed" *ngIf="status == 'failed'"> 
+            El projecto no se ha podido crear 
+        </div>
     <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
         <p>
             <label for="name">Nombre: </label>
@@ -30,7 +35,7 @@
         </p>
         <p>
             <label for="image">Imagen: </label>
-            <input type="file" name="image" placeholder="Subir imagen"/>
+            <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)"/>
         </p>
 
         <input  type="submit" value="Enviar"  [disabled]="!projectForm.form.valid"/>

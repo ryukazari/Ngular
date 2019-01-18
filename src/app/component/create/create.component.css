@@ -62,3 +62,22 @@ form p span{
     color: red;
     font-size: 18px;
 }
+
+div a{
+    color:blue;
+}
+
+.message{
+    padding: 2px;
+    border: 1px solid #eee;
+    width: 50%;
+}
+
+.succes{
+    background: green;
+    color: white;
+}
+.failed{
+    background: red;
+    color: white;
+}
