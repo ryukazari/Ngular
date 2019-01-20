@@ -13,6 +13,8 @@ import { ContactComponent } from './component/contact/contact.component';
 import { InitComponent } from './component/init/init.component';
 import { MenubarComponent } from './component/menubar/menubar.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { DetailComponent } from './component/detail/detail.component';
+import { EditComponent } from './component/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FooterComponent } from './component/footer/footer.component';
     ContactComponent,
     InitComponent,
     MenubarComponent,
-    FooterComponent
+    FooterComponent,
+    DetailComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

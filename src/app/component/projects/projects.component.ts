@@ -15,8 +15,7 @@ export class ProjectsComponent implements OnInit {
   public url: string;
 
   constructor(
-    private _projectService: ProjectService
-
+    private _projectService: ProjectService,
   ){
     this.url=Global.url;
    }
